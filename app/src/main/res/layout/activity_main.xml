@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_login_bg"
+    android:alpha="0.8"
+    tools:context=".MainActivity">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_f5_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/img_login_touxiang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_f5_img">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/img_login_name"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:inputType="phone"
+                android:hint="学生的学号"
+                android:id="@+id/et_login_name"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/img_login_password"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:inputType="textPassword"
+                android:hint="教务网密码"
+                android:id="@+id/et_login_password"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_login_forget"
+                android:layout_weight="1"
+                android:text="忘记密码"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/bt_login_login"
+                android:background="#3ee887"
+                android:layout_margin="4dp"
+                android:text="登录"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_login_register"
+                android:layout_weight="1"
+                android:text="学生注册"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:gravity="center"
+                android:text="本软件仅供学习交流使用，请忽商用"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_margin="25dp"
+                android:src="@drawable/img_login_qq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_margin="25dp"
+                android:src="@drawable/img_login_weibo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_margin="25dp"
+                android:src="@drawable/img_login_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
